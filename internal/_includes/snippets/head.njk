@@ -1,0 +1,25 @@
+      {# page meta #}
+    <meta charset="utf-8">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta name="description" content="{{ meta_description | truncate(140) if meta_description else content | striptags | truncate(140) }}">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="{{ robots if robots else 'index,follow' }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="author" content="{{ metadata.author }}">
+    <meta name="HandheldFriendly" content="true"/>
+
+  <title>{{ title or metadata.title }}</title>
+    {# include css #}
+    <link rel="stylesheet" href="../assets/css/main.css">
+   {# include javascript #}
+    <script src="assets/js/{{ 'main.js' if helpers.environment === 'development' else 'main.min.js' }}" defer></script>
+
+    {# include social meta tags #}
+    
+    {# include favicon, fonts, etc #}
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ '/img/favicon.png' | url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ site.images.favicon_svg }}">
+    <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
+    <link rel="apple-touch-icon" href="{{ site.images.apple_touch_icon }}" sizes="180x180">
+   <!-- endbuild -->
