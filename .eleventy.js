@@ -4,7 +4,8 @@ module.exports = config => {
     config.addLayoutAlias('home', 'layouts/home.njk')
     config.addLayoutAlias('page', 'layouts/page.njk')
     config.addLayoutAlias('contact', 'layouts/contact.njk')
-
+    config.addLayoutAlias('post', 'layouts/post.njk')
+    config.addLayoutAlias('blog', 'layouts/blog.njk')
     // Include static assets
     config.addPassthroughCopy('internal/css')
     config.addPassthroughCopy('internal/js')
@@ -21,4 +22,6 @@ module.exports = config => {
             data: 'globals'
         }
     }
+    
 }
+
