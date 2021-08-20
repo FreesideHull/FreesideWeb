@@ -1,7 +1,11 @@
 {
   "name": "freesideweb",
+  "author": "@closebracket <closebracket@pm.me> (https://github.com/closebracket)",
+  "publisher": "",
+  "homepage": "https://github.com/owner/project#readme",
+  "license": "ISC",
   "version": "1.0.0",
-  "description": "",
+  "description": "Freeside web is an eleventy static site with tailwind and postcss integration to update the Freeside website",
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^10.3.1",
@@ -18,8 +22,5 @@
     "tailwind:process": "npx postcss internal/_includes/css/tailwind.css --o public/assets/css/main.css --watch",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "serve": "npx eleventy --serve"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
