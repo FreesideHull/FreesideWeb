@@ -19,7 +19,7 @@ module.exports = config => {
             input: 'internal',
             output: 'public',
             includes: '_includes',
-            data: 'globals'
+            data: '_data'
         }
     }
     

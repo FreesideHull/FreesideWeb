@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-// Non Tailwind CSS Below
-
-.bg-primary {
- background:#fe6431
+@layer components {
+    .btn-cta {
+        @apply inline-block pb-1 pt-2 pl-2 pr-2 mr-2 bg-primary hover:ring-white rounded ring-2 ring-black text-white;
+    }
 }
+/* Non Tailwind CSS Below */
+/*
+
 .bg-secondary {
  background:#525252
 }
@@ -720,10 +723,7 @@ h3 {
  font-size:var(--text-700);
  line-height:1.5
 }
-ol,
-ul {
- padding:0 0 0 1.25rem
-}
+
 a {
  text-decoration: none;
  color: #fe6431;
@@ -799,6 +799,9 @@ a:not([class]):hover {
     background:#525252;
     color: #F3F6FB;
 }
+
+
+
 .mobile-nav {
  --transition-duration:.3s;
  position:fixed;
@@ -916,3 +919,5 @@ a:not([class]):hover {
  width:var(--social-icon-size);
  height:var(--social-icon-size)
 }
+*/
+
