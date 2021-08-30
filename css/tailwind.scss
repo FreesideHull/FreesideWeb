@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-cta {
+    @apply inline-block pb-1 pt-2 pl-2 pr-2 mr-2 bg-primary hover:ring-white rounded ring-2 ring-black text-white;
+  }
+
+  .bg-project {
+    background-image: url("/img/project-bg.png");
+    background-size: 70vw;
+    background-position: -30vw;
+    background-repeat: no-repeat;
+  }
+  .bg-alumni {
+    background-image: url("/img/alumni-bg.jpg");
+    background-size: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .social-icons .icon-link:hover {
+    color: #fe6431;
+  }
+}

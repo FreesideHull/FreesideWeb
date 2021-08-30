@@ -10,6 +10,7 @@ module.exports = config => {
     config.addPassthroughCopy('internal/css')
     config.addPassthroughCopy('internal/js')
     config.addPassthroughCopy('internal/img')
+    config.addPassthroughCopy('internal/img')
     config.addPassthroughCopy('favicon.png')
     config.addPassthroughCopy('favicon.svg')
 
