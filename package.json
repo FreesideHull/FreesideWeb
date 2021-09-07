@@ -8,6 +8,7 @@
   "description": "Freeside web is an eleventy static site with tailwind and postcss integration to update the Freeside website",
   "main": "index.js",
   "dependencies": {
+    "@11ty/eleventy-cache-assets": "^2.3.0",
     "autoprefixer": "^10.3.1",
     "concurrently": "^6.2.1",
     "postcss-cli": "^8.3.1",
@@ -16,10 +17,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^0.9.0",
-    "@types/simple-icons": "^5.8.0"
+    "@types/simple-icons": "^5.8.0",
+    "cross-env": "^7.0.3"
   },
   "scripts": {
-    "tailwind:process": "npx postcss internal/_includes/css/tailwind.css --o public/assets/css/main.css --watch",
+    "tailwind:process": "cross-env TAILWIND_MODE=watch postcss css/tailwind.scss --o public/assets/css/main.css --watch",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "serve": "npx eleventy --serve"
   }
