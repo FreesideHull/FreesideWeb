@@ -22,8 +22,9 @@
   },
   "scripts": {
     "tailwind:process": "cross-env TAILWIND_MODE=watch postcss css/tailwind.scss --o public/assets/css/main.css --watch",
+    "tailwind:build": "cross-env postcss css/tailwind.scss --o public/assets/css/main.css",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "serve": "npx eleventy --serve",
-		"build": "npm run tailwind:process && npx @11ty/eleventy"
+    "build": "npm run tailwind:build && npx @11ty/eleventy"
   }
 }
