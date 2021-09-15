@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer components {
+
+  .about-links {
+    @apply underline text-primary font-semibold hover:text-danger visited:text-discord
+  }
+
+  .font-big {
+    font-size: 1.125rem;
+    line-height: 3;
+  }
+
+  .about-cta {
+    @apply flex-auto h-16 pb-1 pt-2 pl-2 pr-2 mr-2 bg-primary hover:ring-white rounded ring-2 ring-black text-white;
+  }
+
   .btn-cta {
     @apply inline-block pb-1 pt-2 pl-2 pr-2 mr-2 bg-primary hover:ring-white rounded ring-2 ring-black text-white;
   }
