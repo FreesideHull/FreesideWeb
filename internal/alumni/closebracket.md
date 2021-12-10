@@ -1,3 +1,7 @@
+---
+layout: layouts/default
+title: closebracket interview
+---
 # closebracket interview
 
 ### Tell us a bit about your time at Freeside 
