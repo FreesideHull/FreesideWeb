@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-
   .about-links {
     @apply underline text-primary font-semibold hover:text-danger visited:text-discord
   }
 
+  .logo {
+    width: 10rem;
+  }
+  
   .font-big {
     font-size: 1.125rem;
     line-height: 3;
@@ -21,54 +24,31 @@
     @apply inline-block pb-1 pt-2 pl-2 pr-2 mr-2 bg-primary hover:ring-white rounded ring-2 ring-black text-white;
   }
 
-  .bg-project::before {
-    content: "";
-    position: absolute;
+  .bg-block {
     top:0;
     left: 0;
     right: 0;
-    z-index: -1;
-  
-    display: block;
-    background-image: url("/img/project-bg.png");
-    background-size:cover;
-    width: 100%;
-    height: 100%;
-  
-    filter: blur(2px);
-  }
-
-
-  .bg-project {
-    /* this is needed or the background will be offset by a few pixels at the top */
-    overflow: auto;
     position: relative;
-  }
-
-
-  .bg-alumni:before {
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-  
-    display: block;
-    background-image: url("/img/alumni-bg.jpg");
-    background-size:cover;
-    width: 100%;
-    height: 100%;
-  
-    filter: blur(2px) brightness(40%);
-  }
-  
-  .bg-alumni {
-    /* this is needed or the background will be offset by a few pixels at the top */
     overflow: auto;
-    position: relative;
+    display: block;
+    background-size:cover;
+  }
+  
+  .bg-projects {
+    @apply bg-block;
+    background-image: url("/img/projects-bg.jpg");
   }
 
+  .bg-resources {
+    @apply bg-block;
+    background-image: url("/img/resources-bg.jpg");    
+  }
+
+  .bg-discord-guild {
+    @apply bg-block;
+    background-image: url("/img/discord-bg.jpg");    
+  }
+  
   .social-icons .icon-link:hover {
     color: #fe6431;
   }

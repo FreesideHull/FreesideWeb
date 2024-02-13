@@ -2,8 +2,6 @@
 <html class="h-100" lang="{{ metadata.language }}">
 {# include header #}
 {% include "snippets/head.njk" %}
-{# include nav #}
-{% include "snippets/nav.njk" %}
 
 <body class="bg-white color-primary font-base leading-normal">
 
@@ -11,6 +9,11 @@
 
 
     <div id="wrapper" class="container mx-auto ">
+        <div class="container flex mx-auto h-24 mb-20 mt-2 py-8">
+          <div class="flex-none">
+            <a href="/"><img src="/img/logo.svg" class="logo float-left"></a>
+          </div>
+        </div>
 
         {# include content #}
         {{ content | safe }}

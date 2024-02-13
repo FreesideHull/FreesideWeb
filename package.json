@@ -4,7 +4,7 @@
   "publisher": "",
   "homepage": "https://github.com/owner/project#readme",
   "license": "ISC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Freeside web is an eleventy static site with tailwind and postcss integration to update the Freeside website",
   "main": "index.js",
   "dependencies": {
